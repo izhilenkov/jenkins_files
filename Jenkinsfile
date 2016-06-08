@@ -1,4 +1,6 @@
 node('master') {
+
+  sh("pwd")
   stage "Bundle install"
   sh("bundle install")
 
