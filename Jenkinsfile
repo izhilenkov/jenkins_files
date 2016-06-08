@@ -1,2 +1,4 @@
-stage "Hi! I'm from jenkins file"
-sh("echo 'Hello'")
+node('master') {
+  stage "Hi! I'm from jenkins file master"
+  sh("echo 'Hello master!'")
+}
