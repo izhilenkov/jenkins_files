@@ -1,4 +1,4 @@
 node('master') {
 stage "Hi! I'm from jenkins file from develop"
- sh("echo 'Hello I'm develop!!!'")
+ sh("echo 'Hello Im develop!!!'")
 }
