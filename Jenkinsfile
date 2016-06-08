@@ -3,5 +3,5 @@ node('master') {
   checkout scm
 
   stage "Rspec"
-  sh("bundle exec rspec")
+  sh("rspec")
 }
