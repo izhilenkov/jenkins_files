@@ -6,7 +6,7 @@ node("${env.BUILD_TAG}") {
 
   sh("pwd")
 
-  sh("echo ${env.BUILD_TAG}")
+  sh("gem install bundler")
 
   stage "Rspec"
   sh("bundle exec rspec")
