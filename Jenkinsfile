@@ -1,4 +1,10 @@
 node('master') {
-  stage "Hi! I'm from jenkins file master"
-  sh("echo 'Hello master!'")
+  stage "Install bundler"
+  sh("gem install bundler")
+
+  stage "Bundle install"
+  sh("bundle install")
+
+  stage "Rspec"
+  sh("bundle exec rspec")
 }
