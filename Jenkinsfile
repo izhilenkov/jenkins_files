@@ -1,9 +1,6 @@
 node('master') {
-
-  sh("pwd")
-
+  stage "Checkout SCM"
   checkout scm
-
 
   stage "Bundle install"
   sh("bundle install")
