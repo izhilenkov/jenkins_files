@@ -2,10 +2,7 @@ node("${env.BUILD_TAG}") {
   stage "Checkout SCM"
   checkout scm
 
-  stage "PWD"
-
-  sh("pwd")
-
+  stage "Install bundler"
   sh("gem install bundler")
 
   stage "Rspec"
